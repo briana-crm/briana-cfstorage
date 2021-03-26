@@ -1,0 +1,9 @@
+spring:
+  rabbitmq:
+    host: ${RABBIT_MQ_HOST:localhost}
+    port: ${RABBIT_MQ_PORT:5432}
+    username: '{cipher}197b7623e05f928b10de15a3df1e7b483d9f0df2c1e21b6f0c3933eedb0f0851'
+    password: '{cipher}3cacd374243e5ae3b121e1b8a5020b3560c490507c4f5569d7807d028ecfbd56'
+  cloud:
+    bus:
+      enabled: true
