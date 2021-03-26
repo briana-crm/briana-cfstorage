@@ -11,4 +11,4 @@ eureka:
     serviceUrl:
       defaultZone: http://${DISCOVERY_SERVICE_NAME:localhost}:8761/eureka
       
-testSecretValue: '{cipher}2ef5efff0605ad8c0b1cacd9fdb67518f0921b47e8aead12a2a34b94c0352e99'
+testSecretValue: '{cipher}07d458bc25133dae49001db8402ec4c59bc62cb5245f46c094afb62ada83573e'
