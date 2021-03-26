@@ -1,4 +1,9 @@
 spring:
+  cloud:
+    bus:
+      enabled: true
+      refresh:
+        enabled: true
   jpa:
     hibernate:
       ddl-auto: none
@@ -7,6 +12,11 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     serviceUrl:
-      defaultZone: http://${DISCOVERY_SERVICE_NAME:localhost}:8761/eureka
+      defaultZone: http://${DISCOVERY_SERVICE_NAME}:8761/eureka     
+rabbitmq:
+  host: ${RABBIT_MQ_HOST}
+  port: ${RABBIT_MQ_PORT}
+  username: '{cipher}197b7623e05f928b10de15a3df1e7b483d9f0df2c1e21b6f0c3933eedb0f0851'
+  password: '{cipher}3cacd374243e5ae3b121e1b8a5020b3560c490507c4f5569d7807d028ecfbd56'
       
 testSecretValue: '{cipher}07d458bc25133dae49001db8402ec4c59bc62cb5245f46c094afb62ada83573e'
