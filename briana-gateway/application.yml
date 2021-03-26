@@ -16,7 +16,7 @@ spring:
           predicates:
             - Path=/api/v1/customers/**
 
-        - id: config-cloud-bus
+        - id: briana-config
             uri: http://${CONFIG_SERVICE_HOST}:8888
             predicates:
               - Path=/api/v1/monitor
