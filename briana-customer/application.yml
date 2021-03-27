@@ -18,4 +18,4 @@ eureka:
     register-with-eureka: true
     serviceUrl:
       defaultZone: http://${DISCOVERY_SERVICE_HOST}:8761/eureka     
-testSecretValue: '{cipher}07d458bc25133dae49001db8402ec4c59bc62cb5245f46c094afb62ada83573e'
+testSecretValue: '{cipher}4db9c2a9eacdd33ddfb13a37d29c746d5af60385ac1bcb40bb47baaeb4899e318b9dbd35d253e7b585a10d56de5aa572'
