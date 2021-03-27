@@ -20,5 +20,3 @@ spring:
           uri: http://${CONFIG_SERVICE_HOST}:8888
           predicates:
             - Path=/api/v1/monitor
-          filters:
-            - RewritePath=/monitor
