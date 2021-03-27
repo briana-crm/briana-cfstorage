@@ -12,7 +12,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     serviceUrl:
-      defaultZone: http://${DISCOVERY_SERVICE_NAME}:8761/eureka     
+      defaultZone: http://${DISCOVERY_SERVICE_HOST}:8761/eureka     
 rabbitmq:
   host: ${RABBIT_MQ_HOST}
   port: ${RABBIT_MQ_PORT}
