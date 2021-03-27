@@ -28,4 +28,6 @@ spring:
         - id: briana-config
           uri: http://${CONFIG_SERVICE_HOST}:8888
           predicates:
-            - Path=/api/v1/monitor
+            - Path=/api/monitor
+          filters:
+            - RewritePath=/api(?<segment>/?.*), $\{segment}
