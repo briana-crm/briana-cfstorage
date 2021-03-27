@@ -1,4 +1,9 @@
 spring:
+  cloud:
+    bus:
+      enabled: true
+      refresh:
+        enabled: true
   rabbitmq:
     host: ${RABBIT_MQ_HOST}
     port: ${RABBIT_MQ_PORT}
