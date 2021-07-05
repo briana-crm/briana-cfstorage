@@ -1,0 +1,45 @@
+spring:
+  rabbitmq:
+    host: ${RABBIT_MQ_HOST}
+    port: ${RABBIT_MQ_PORT}
+    username: '{cipher}47012bfd46d4c1cb3b283956368f21d3b957e3947b17894595aaee9685e60cda'
+    password: '{cipher}fe37eff3ec8cbe35de798cda25e8f38a62a40535dbc2294bf99916b841db4dab'
+  cloud:
+    function:
+      definition: process
+  datasource:
+    url: jdbc:postgresql://${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}
+    driverClassName: org.postgresql.Driver
+    password: ${DATABASE_USERNAME}
+    username: ${DATABASE_PORT}
+  mail:
+    port: 587
+    host: smtp.gmail.com
+    username: noreply.briana@gmail.com
+    password: '{cipher}04a5155c5dcf9d75d881d4aa5d510c53021bc9952d611ceea396fe04320f944503f8980b40312435aee4cc7c841af62d'
+    properties:
+      mail:
+        debug: true
+        transport:
+          protocol: smtp
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://${DISCOVERY_SERVICE_HOST}:8761/eureka
+logging:
+  level:
+    org:
+      springframework:
+        amqp: DEBUG
+      jdbc:
+        datasource:
+          DataSourceTransactionManager: DEBUG
+      jetbrains:
+        exposed:
+          SpringTransactionManager: DEBUG
