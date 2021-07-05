@@ -24,6 +24,11 @@ spring:
           uri: lb://briana-customer
           predicates:
             - Path=/api/v1/customers/**
+            
+        - id: briana-mail
+          uri: lb://briana-mail
+          predicates:
+            - Path=/api/v1/email/**
 
         - id: briana-config
           uri: http://${CONFIG_SERVICE_HOST}:8888
